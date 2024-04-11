@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "email": "johndoe@email.com",
+      "password": "siunodos3",
+      "todoList": [
+        {
+          "id": 1,
+          "title": "Completar proyecto",
+          "description": "Terminar la implementación del proyecto de Angular",
+          "dueDate": "2024-04-30",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Comprar víveres",
+          "description": "Ir al supermercado y comprar comida para la semana",
+          "dueDate": "2024-04-10",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "email": "prueba@email.com",
+      "password": "siunodos2",
+      "todoList": [
+        {
+          "id":1,
+          "title": "Preparar presentación",
+          "description": "Crear diapositivas para la presentación del proyecto",
+          "dueDate": "2024-04-15",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "email": "segundo@email.com",
+      "password": "siunodos1",
+      "todoList": [
+        {
+          "id":1,
+          "title": "Hacer ejercicio",
+          "description": "Ir al gimnasio y hacer una rutina de ejercicios",
+          "dueDate": "2024-04-20",
+          "completed": false
+        },
+        {
+          "id":2,
+          "title": "Llamar al banco",
+          "description": "Resolver un problema con la tarjeta de crédito",
+          "dueDate": "2024-04-12",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "email": "tre@email.com",
+      "password": "siunodos4",
+      "todoList": [
+        {
+          "id":1,
+          "title": "Estudiar para examen",
+          "description": "Repasar los apuntes y hacer ejercicios de práctica",
+          "dueDate": "2024-04-25",
+          "completed": false
+        }
+      ]
+    }
+  ]
+}

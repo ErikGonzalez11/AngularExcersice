@@ -1,0 +1,29 @@
+<form [formGroup]="taskForm" class="form-content">
+    <mat-form-field appearance="standard">
+        <mat-label>Titulo</mat-label>
+        <input type="text" matInput placeholder="Ex. Hacer los deberes" formControlName="title">
+        <mat-error *ngIf="taskForm.get('title')?.hasError('required')">
+            Campo requerido
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="standard">
+        <mat-label>Descripcion</mat-label>
+        <input type="text" matInput placeholder="Ex. Barrer la casa" formControlName="description">
+        <mat-error *ngIf="taskForm.get('description')?.hasError('required')">
+            Campo requerido
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="standard">
+        <mat-label>Fecha</mat-label>
+        <input type="text" matInput placeholder="Ex. 2024-04-15" formControlName="dueDate">
+        <mat-error *ngIf="taskForm.get('dueDate')?.hasError('required')">
+            Campo requerido
+        </mat-error>
+    </mat-form-field>
+    <div class="button-container">
+        <button mat-raised-button color="primary" [disabled]="!taskForm.valid" (click)="save()">Guardar</button>
+    </div>
+</form>
+

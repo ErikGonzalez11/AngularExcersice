@@ -1,0 +1,18 @@
+<div *ngIf="tasks.length > 0; else noTasks">
+    <h2>Tareas</h2>
+    <div class="separator">
+        <div class="card" *ngFor="let task of tasks" [class.completed]="task.completed">
+            <input type="checkbox" class="complete-checkbox" [(ngModel)]="task.completed" (click)="toggleCompleted(task)">
+            <h3>{{ task.title }}</h3>
+            <p>{{ task.description }}</p>
+            <p>Fecha de vencimiento: {{ task.dueDate }}</p>
+            <mat-icon class="cursor-pointer red-icon" (click)="deleteTask(task.id ?? '')">delete</mat-icon>
+            <mat-icon class="cursor-pointer" (click)="editTask(task)">edit</mat-icon>
+        </div>
+    </div>
+</div>
+<ng-template #noTasks>
+    <p>No hay tareas para mostrar.</p>
+</ng-template>
+
+
